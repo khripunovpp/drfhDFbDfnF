@@ -35,19 +35,24 @@
 		position: relative
 	&__photo
 		position: absolute
+		animation-fill-mode: both
+		animation-duration: .5s
 		&--1
 			left: 5px
 			top: 0
 			transform: rotate(1deg)
+			animation-delay: .5s
 		&--2
 			left: 180px
 			top: 10px
 			z-index: 1
 			transform: rotate(-3deg)
+			animation-delay: .7s
 		&--3
 			right: 30px
 			top: 0
 			transform: rotate(9deg)
+			animation-delay: .9s
 			z-index: 2
 	&__buisnessCard
 		position: absolute

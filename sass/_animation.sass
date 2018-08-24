@@ -24,6 +24,12 @@
 		opacity: 1
 		transform: translateY(0)
 
+@keyframes toShow
+	from
+		opacity: 0
+	to
+		opacity: 1
+
 .js-parralax
 	transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1)
 
@@ -44,3 +50,9 @@
 				&__desc
 					transform: translateY(-30px)
 					opacity: 0
+
+.b-expert__photo
+	&.js-isonscreen
+		animation-name: toShow
+	&.js-scroll-detection
+		opacity: 0
