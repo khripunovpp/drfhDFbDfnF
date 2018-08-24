@@ -1,0 +1,315 @@
+@import "bourbon"
+
+@media only screen and (max-width : 991px)
+
+	%container
+		max-width: 320px
+
+	%title
+		font-size: 24px
+
+	.c-btn
+		font-size: 12px
+		padding: 13px 23px
+		display: table
+		margin-left: auto
+		margin-right: auto
+
+	.b-slider
+		&__slide
+			height: 480px
+		&__wrap
+			height: 480px
+		&__left
+			width: 100%
+			left: 0
+			bottom: 50px
+			padding: 0 15px
+			text-align: center
+		&__text
+			font-size: 16px
+			line-height: 1.25
+			text-shadow: 0 0 50px rgba(255,255,255,.9)
+			position: relative
+			opacity: .99
+			strong
+				color: inherit
+				font-size: 20px
+				text-shadow: inherit
+			&::after
+				content: ''
+				position: absolute
+				z-index: -1
+				top: 50%
+				left: 50%
+				width: 30%
+				transform: translateX(-50%)
+				box-shadow: 0 0 70px 70px rgba(255,255,255,.8)
+				border-radius: 50%
+		&__btn
+			margin-top: 15px
+			position: relative
+			z-index: 1
+		&__right
+			width: auto
+			padding-right: 0
+			left: auto
+			right: -160px
+		&__product
+			width: 120px
+		&__pager
+			bottom: 10px
+		&__badges
+			text-align: center
+			img
+				width: 50px
+			img+img
+				margin-left: 150px
+
+	.b-about
+		padding: 30px 0
+		&__title
+			margin-bottom: 30px
+		&__img
+			width: 750px
+			max-width: none
+			transform: translateX(-30%)
+			margin: -40px 0 -230px
+		&__product
+			position: relative
+			z-index: 1
+			float: none
+			display: block
+			margin: 0 auto
+		&__text
+			font-size: 14px
+			margin-top: 20px
+		&__btn
+			margin-top: 25px
+
+	.b-scheme
+		&__item
+			width: auto
+			&--1
+				&::after,
+				&::before
+					display: none
+			&--2,
+			&--3
+				position: relative
+				top: auto
+				left: auto
+			&+&
+				margin-top: 60px
+				&::after
+					content: ''
+					position: absolute
+					top: -35px
+					left: 50%
+					width: 80px
+					height: 11px
+					margin-left: -40px
+					background-size: cover
+					background-repeat: no-repeat
+					background-position: 50% 50%
+					background-image: url(../img/about-icon-sep.png)
+		&__text
+			font-size: 16px
+		&__icon
+			width: 69px
+			height: 80px
+			background-size: contain
+
+	.b-composition
+		&__top
+			padding: 30px
+		&__capsule
+			margin-left: -160px
+		&__barley
+			margin: 170px 0 -70px
+		&__bottom
+			padding: 70px 0 30px
+		&__subtitle
+			font-size: 16px
+		&__lead
+			position: relative
+			&::after,
+			&::before
+				content: ''
+				position: absolute
+				z-index: 1
+				bottom: -100px
+				background-size: cover
+				background-repeat: no-repeat
+				background-position: 50% 50%
+			&::after
+				right: 0
+				width: 31px
+				height: 90px
+				background-image: url(../img/composition-arrow-3.png)
+			&::before
+				left: 0
+				width: 31px
+				height: 90px
+				background-image: url(../img/composition-arrow-2.png)
+		&__item
+			display: block
+			width: 100%	
+			top: auto
+			padding: 0
+			&::before
+				display: none
+		&__list
+			margin: 0
+			&.js-isonscreen
+				.b-composition
+					&__pic,
+					&__name,
+					&__desc
+						animation-name: none
+			&.js-scroll-detection
+				.b-composition
+					&__pic,
+					&__name,
+					&__desc
+						transform: translateY(0)
+						opacity: 1
+		&__name
+			display: table
+			margin: -12px auto 0
+			font-size: 16px
+			padding: 0 10px
+			background-color: #f0f0f0
+		&__desc
+			margin: 10px 0 15px
+			padding: 0 10px
+		&__info
+			margin-top: 15px
+			border: 1px solid #e0e0e0
+		&__stars
+			margin: 25px auto 8px
+		&__slogan
+			font-size: 16px
+		&__btn
+			margin-top: 15px
+
+	.b-effects
+		padding: 30px 0
+		&__wrap
+			display: block
+		&__product
+			top: 10px
+		&__item
+			display: block
+			position: relative
+			&:first-child
+				padding-right: 0
+			&:last-child
+				.b-effects
+					&__img
+						margin-left: 0
+					&__text
+						padding-left: 0
+						border: none
+			&+&
+				margin-top: 20px
+				padding-top: 20px
+				&::after
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					height: 1px
+					width: 140px
+					background-color: #e5e5e5
+		&__text
+			padding: 0
+
+	.b-research
+		&__wrap
+			max-width: none
+			padding: 25px 0
+		&__text
+			max-width: 320px
+			margin: 0 auto
+			padding: 0 15px
+			font-size: 12px
+		&__man
+			display: none
+
+	.b-guarantees
+		padding: 30px 0
+		&__inner
+			display: block
+		&__item
+			display: block
+			padding: 0
+			&+&
+				margin-top: 20px
+
+	.b-expert
+		padding: 35px 0 170px
+		background-image: url(../img/expert-bg-mobile.jpg)
+		&__el
+			display: none
+		&__inner
+			padding: 0
+			margin: 0
+			background-image: none
+		&__title
+			font-size: 24px
+			width: auto
+			text-shadow: 1px 1px 0 rgba(255,255,255,.55)
+		&__text
+			padding: 0
+		&__pics
+			z-index: 2
+			height: 170px
+			margin-bottom: -18px
+		&__photo
+			&--1
+				z-index: 1
+				left: 10px
+				transform: rotate(-2deg)
+			&--2
+				z-index: 0
+				top: auto
+				bottom: -40px
+				left: 70px
+			&--3
+				right: 20px
+				transform: rotate(2deg)
+		&__mobilePaper
+			margin-left: -190px
+			padding: 60px 80px 95px 110px
+			transform: translateX(80px)
+			background-size: 100% 100%
+			background-repeat: no-repeat
+			background-position: 50% 50%
+			background-image: url(../img/expert-paper.png)
+		&__slogan
+			padding-left: 0
+			width: auto
+		&__sign
+			right: 95px
+			bottom: 50px
+			left: auto
+		&__buisnessCard
+			width: 300px
+			right: auto
+			left: 105px
+			bottom: -120px
+
+
+	.b-photo
+		&__desc
+			font-size: 10px
+			line-height: 1.2
+			padding: 6px
+
+
+
+@media only screen and (max-width : 680px)
+	.b-slider
+		&__right
+			display: none

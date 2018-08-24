@@ -1,0 +1,216 @@
+doctype html
+html
+
+	head
+		meta(charset='utf-8')
+		title
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800")
+		link(rel='stylesheet', href='css/style.css')
+		style.
+			*,
+			*::after,
+			*::before {
+				//- outline: 1px solid rgba(255,0,0,.5) !important
+			}
+		script(src="http://ctr-localhost.ru/vlad/jq.js")
+
+	body
+		.w-page
+			.b-slider
+				.b-slider__badges
+					.container
+						img(src="img/badge-bestseller.png", alt="")
+						img(src="img/badge-gmo.png", alt="")
+				.b-slider__inner
+					.b-slider__slide.b-slider__slide--1
+						.b-slider__part.b-slider__part--1
+							.b-slider__wrap
+								picture
+									source(srcset="img/slide-img-1-1-mobile.png", media="(max-width: 991px)")
+									img(src="img/slide-img-1-1.png", alt="").b-slider__img
+								.b-slider__left
+									p.b-slider__text Снова не получилось? #[br] В ответственный момент #[br] член снова не встал?
+									button.c-btn.b-slider__btn.pre_toform Исправить ситуацию
+						.b-slider__part.b-slider__part--2
+							.b-slider__wrap
+								picture
+									source(srcset="img/slide-img-1-2-mobile.png", media="(max-width: 991px)")
+									img(src="img/slide-img-1-2.png", alt="").b-slider__img
+								.b-slider__left
+									p.b-slider__text #[strong Hordeum Forte] ты готов к сексу 24/7!
+									button.c-btn.b-slider__btn.pre_toform Заказать Hordeum Forte
+								.b-slider__right
+									img(src="img/product.png", alt="").b-slider__product
+					.b-slider__slide.b-slider__slide--2
+						.b-slider__part.b-slider__part--1
+							.b-slider__wrap
+								picture
+									source(srcset="img/slide-img-2-1-mobile.png", media="(max-width: 991px)")
+									img(src="img/slide-img-2-1.png", alt="").b-slider__img
+								.b-slider__left
+									p.b-slider__text Учащённые позывы #[br] сопровождаются  затруднённым #[br]мочеиспусканием, болью #[br] и жжением в яичках?
+									button.c-btn.b-slider__btn.pre_toform Избавиться от боли
+						.b-slider__part.b-slider__part--2
+							.b-slider__wrap
+								picture
+									source(srcset="img/slide-img-2-2-mobile.png", media="(max-width: 991px)")
+									img(src="img/slide-img-2-2.png", alt="").b-slider__img
+								.b-slider__left
+									p.b-slider__text #[strong Hordeum Forte] снимает симптомы воспаления #[br] и инфекций через 17 минут #[br] после первого приема
+									button.c-btn.b-slider__btn.pre_toform Заказать Hordeum Forte
+								.b-slider__right
+									img(src="img/product.png", alt="").b-slider__product
+					.b-slider__slide.b-slider__slide--3
+						.b-slider__part.b-slider__part--1
+							.b-slider__wrap
+								picture
+									source(srcset="img/slide-img-3-1-mobile.png", media="(max-width: 991px)")
+									img(src="img/slide-img-3-1.png", alt="").b-slider__img
+								.b-slider__left
+									p.b-slider__text Быстро кончаешь? Не можешь #[br] удовлетворить партнёршу,#[br] поэтому загружаешь себя #[br] работой и делами?
+									button.c-btn.b-slider__btn.pre_toform Вернуть либидо
+						.b-slider__part.b-slider__part--2
+							.b-slider__wrap
+								picture
+									source(srcset="img/slide-img-3-2-mobile.png", media="(max-width: 991px)")
+									img(src="img/slide-img-3-2.png", alt="").b-slider__img
+								.b-slider__left
+									p.b-slider__text #[strong Hordeum Forte] вернёт тебе сексуальную #[br] силу. Начать никогда #[br] не поздно!
+									button.c-btn.b-slider__btn.pre_toform Заказать Hordeum Forte
+								.b-slider__right
+									img(src="img/product.png", alt="").b-slider__product
+				.b-slider__pager.b-pager
+					ul.b-pager__list
+						li.b-pager__item #[a(href="", data-slide-index='0').b-pager__handler]
+						li.b-pager__item #[a(href="", data-slide-index='1').b-pager__handler]
+						li.b-pager__item #[a(href="", data-slide-index='2').b-pager__handler]
+			.b-about
+				.container
+					.b-about__inner
+						h2.b-about__title #[b Hordeum Forte] залог мужского здоровья
+						.b-about__scheme.b-scheme
+							.b-scheme__item.b-scheme__item--1
+								.b-scheme__icon
+								p.b-scheme__text Одна капсула #[br] Hordeum Forte
+							.b-scheme__item.b-scheme__item--2
+								.b-scheme__icon
+								p.b-scheme__text Сила проросшего #[br] ячменя
+							.b-scheme__item.b-scheme__item--3
+								.b-scheme__icon
+								p.b-scheme__text Безотказная #[br] сексуальная сила
+						img(src="img/about-bg.png", alt="").b-about__img
+						.b-about__wrap
+							img.b-about__product(src="img/product-2.png", alt="")
+							p.b-about__text Об оздоровительных свойствах ячменя известно ещё со времён древних римлян и египтян. В XVIII веке ни одна лечебная настойка не обходилась без измельчённого проросшего зерна ячменя. Знахари объясняли это тем, что это зерно благотворно влияет на мужской организм: насыщает, придаёт жизненных сил, восстанавливает гормональный баланс и лечит мочеполовые болезни.
+						button.c-btn.b-about__btn.pre_toform Заказать Hordeum Forte
+			.b-composition
+				.b-composition__inner
+					.b-composition__top
+						.container
+							h2.b-composition__title #[b Настоящие ингредиенты] настоящие результаты
+							picture
+									source(srcset="img/about-capsule-mobile.png", media="(max-width: 991px)")
+									img(src="img/about-capsule.png", alt="", data-rellax-speed="1").b-composition__capsule.js-parralax
+							picture
+								source(srcset="img/about-barley-mobile.png", media="(max-width: 991px)")
+								img(src="img/about-barley.png", alt="").b-composition__barley
+					.b-composition__bottom
+						.container
+							h3.b-composition__subtitle Экстракт проросших зёрен ячменя
+							p.b-composition__lead снимает болевые симптомы в области паха и промежности, а также облегчает мочеиспускание всего за 3 часа
+							ul.b-composition__list.js-scroll-detection(data-scroll-shift="120")
+								li.b-composition__item.b-composition__item--1
+									img.b-composition__pic(src="img/ingredient-1.png", alt="")
+									.b-composition__info
+										h4.b-composition__name Биотин
+										p.b-composition__desc устраняет воспаление простаты и восстанавливает уровень тестостерона
+								li.b-composition__item.b-composition__item--2
+									img.b-composition__pic(src="img/ingredient-2.png", alt="")
+									.b-composition__info
+										h4.b-composition__name Витамин E
+										p.b-composition__desc устраняет инфекционные и воспалительные процессы, восстанавливает защитные силы организма
+								li.b-composition__item.b-composition__item--3
+									img.b-composition__pic(src="img/ingredient-3.png", alt="")
+									.b-composition__info
+										h4.b-composition__name Витамин B
+										p.b-composition__desc повышает количество эякулята и активность сперматозоидов
+								li.b-composition__item.b-composition__item--4
+									img.b-composition__pic(src="img/ingredient-4.png", alt="")
+									.b-composition__info
+										h4.b-composition__name Клетчатка
+										p.b-composition__desc адсорбирует и выводит из организма токсины и яды, которые подавляют иммунитет
+							img.b-composition__stars(src="img/stars.gif", alt="")
+							p.b-composition__slogan Hordeum Forte — гарантированный результат без побочных эффектов!
+							button.c-btn.b-composition__btn.pre_toform Заказать Hordeum Forte
+			.b-effects
+				.container
+					.b-effects__inner
+						img.b-effects__product.js-parralax(src="img/product-3.png", alt="", data-rellax-speed=".5")
+						h2.b-effects__title #[b Hordeum Forte] заботится о мужском здоровье
+						.b-effects__wrap
+							.b-effects__item
+								img.b-effects__img(src="img/effects-img-1.gif", alt="")
+								p.b-effects__text Действие Hordeum Forte при хроническом простатите основано на нормализации кровотока в простате, уменьшении отёка и воспаления. С первых дней лечения простатита Hordeum Forte приводит к облегчению симптоматики.
+							.b-effects__item
+								img.b-effects__img(src="img/effects-img-2.gif", alt="")
+								p.b-effects__text Препарат действует прицельно и не имеет побочных действий. Доказано, что Hordeum Forte не оказывает негативного воздействия на репродуктивную и сексуальную функции, что немаловажно для любого современного мужчины.
+			.b-research
+				.b-research__wrap
+					p.b-research__text Клинические исследования показали, что Hordeum Forte не только оказывает эффективное противоотёчное, противовоспалительное и обезболивающее действие, но также повышает эффективность действия антибиотиков и позитивно влияет на сперматогенез. Hordeum Forte быстро устраняет боль и при этом не имеет ограничений по применению в отличие от нестероидных противовоспалительных препаратов.
+					.b-research__man
+			.b-guarantees
+				.container
+					.b-guarantees__inner
+						.b-guarantees__item
+							img.b-guarantees__icon(src="img/guarantees-icon-1.png", alt="")
+							p.b-guarantees__text Длительный приём препарата не оказывает негативного влияния и не вызывает привыкания.
+						.b-guarantees__item
+							img.b-guarantees__icon(src="img/guarantees-icon-2.png", alt="")
+							p.b-guarantees__text Курсовая терапия Hordeum Forte позволяет пациентам вести активный образ жизни.
+			.b-expert
+				img.b-expert__el.b-expert__el--1(src="img/expert-el-1.png", alt="")
+				img.b-expert__el.b-expert__el--2(src="img/expert-el-2.png", alt="")
+				img.b-expert__el.b-expert__el--3(src="img/expert-el-3.png", alt="")
+				img.b-expert__el.b-expert__el--4(src="img/expert-el-4.png", alt="")
+				img.b-expert__el.b-expert__el--5(src="img/expert-el-5.png", alt="")
+				.container
+					.b-expert__inner
+						h2.b-expert__title Что говорят эксперты
+						p.b-expert__text Простатит — это серьёзно, лечить его нужно сразу. Вначале симптомы могут быть выражены у мужчин ещё неярко, но и недуг далеко не зашёл, можно повернуть заболевание вспять. Поэтому главное в лечении не пропустить начальную стадию, иначе последствия могут быть необратимыми:
+						.b-expert__pics
+							.b-expert__photo.b-expert__photo--1
+								.b-photo
+									picture
+										source(srcset="img/photo-1-mobile.jpg", media="(max-width: 991px)")
+										img(src="img/photo-1.jpg", alt="").b-photo__pic
+									p.b-photo__desc Половая дисфункция и бесплодие
+							.b-expert__photo.b-expert__photo--2
+								.b-photo
+									picture
+										source(srcset="img/photo-2-mobile.jpg", media="(max-width: 991px)")
+										img(src="img/photo-2.jpg", alt="").b-photo__pic
+									p.b-photo__desc Аденома простаты
+							.b-expert__photo.b-expert__photo--3
+								.b-photo
+									picture
+										source(srcset="img/photo-3-mobile.jpg", media="(max-width: 991px)")
+										img(src="img/photo-3.jpg", alt="").b-photo__pic
+									p.b-photo__desc Онкологические опухоли
+						.b-expert__mobilePaper
+							p.b-expert__text Чтобы избежать таких осложнений, я рекомендую клиентам Hordeum Forte. На собственной медицинской практике я убедился, что только этот комплекс оказывает существенное улучшение. Уже в первые часы приёма препарат снимает болевые симптомы и день за днём восстанавливает простату.
+							p.b-expert__text Состав Hordeum Forte позволяет использовать его и в профилактических целях. Препарат препятствует застойным явлениям и положительно влияет на кровоснабжение простаты и отток секрета из железы. Профилактический приём Hordeum Forte существенно снижает вероятность воспаления простаты.
+							p.b-expert__slogan С Hordeum Forte у вас обязательно получится!
+							img.b-expert__sign(src="img/expert-sign.png", alt="")
+							.b-expert__buisnessCard
+								.b-buisnessCard
+									p.b-buisnessCard__name Алексей Перфицкий
+									p.b-buisnessCard__role эксперт в области мужского здоровья
+									.b-buisnessCard__img
+
+
+		script(src="js/rellax.min.js")
+		script(src="js/bxslider.js")
+		script(src="js/common.js")

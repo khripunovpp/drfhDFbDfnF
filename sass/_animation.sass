@@ -1,0 +1,46 @@
+@keyframes pager
+	0
+		width: 10px
+	50%
+		width: 70px
+	100%
+		width: 10px
+		float: right
+
+@keyframes slide3img
+	0
+		bottom: -30px
+	50%
+		bottom: 0
+	100%
+		bottom: -30px
+
+
+@keyframes toBottom
+	from
+		opacity: 0
+		transform: translateY(-30px)
+	to
+		opacity: 1
+		transform: translateY(0)
+
+.js-parralax
+	transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1)
+
+.b-composition
+	&__list
+		&.js-isonscreen
+			.b-composition
+				&__item::before,
+				&__pic,
+				&__name,
+				&__desc
+					animation-name: toBottom
+		&.js-scroll-detection
+			.b-composition
+				&__item::before,
+				&__pic,
+				&__name,
+				&__desc
+					transform: translateY(-30px)
+					opacity: 0
