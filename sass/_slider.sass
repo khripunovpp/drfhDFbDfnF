@@ -48,11 +48,11 @@
 		position: absolute
 	&__left
 		bottom: 80px
-		width: 70%
+		width: 50%
 	&__right
-		width: 30%
+		width: 50%
 		bottom: 0
-		left: 70%
+		left: 50%
 		text-align: right
 		padding-right: 50px
 	&__img
@@ -66,14 +66,28 @@
 		font-size: 28px
 		font-weight: 700
 		text-shadow: 0 0 20px rgba(255,255,255,.8)
+		position: relative
+		opacity: .99
 		strong
 			display: block
 			color: $color
 			font-size: 40px
 			text-transform: uppercase
 			text-shadow: 0 0 20px rgba(0,0,0,.9)
+		&::after
+			content: ''
+			position: absolute
+			z-index: -1
+			top: 50%
+			left: 50%
+			width: 30%
+			transform: translate(-50%,-50%)
+			box-shadow: 0 0 170px 110px rgba(255,255,255,.8)
+			border-radius: 50%
 	&__btn
 		margin-top: 40px
+		position: relative
+		z-index: 1
 	&__badges
 		position: absolute
 		z-index: 1
