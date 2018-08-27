@@ -39,6 +39,9 @@ ul
 	margin: 0	
 	padding: 0
 
+select
+	appearance: none
+
 select::-ms-expand
 	display: none
 
@@ -108,6 +111,48 @@ select::-ms-expand
 				&.active
 						background-color: $color
 
+.b-form
+	&__group
+		border: 1px solid #e6e6e6
+		position: relative
+		&:first-of-type
+			border-radius: 5px 5px 0 0
+		&:last-of-type
+			border-radius: 0 0 5px 5px
+		&--select
+			&::after
+				content: '\e901'
+				@extend %icon
+				position: absolute
+				top: 13px
+				right: 15px
+		&.onfocus
+			border-color: #1c2238
+			z-index: 1
+		&+&
+			margin-top: -1px
+	&__field
+		padding: 10px 15px
+		width: 100%
+		border: none
+		background-color: transparent
+		font-family: $font
+		font-size: 16px
+		font-weight: 500
+		color: #1c2238
+	&__label
+		position: absolute
+		top: 10px
+		left: 15px
+		font-size: 16px
+		font-weight: 500
+		color: #bebfc3
+		cursor: pointer
+	&__btn
+		margin-top: 40px
+
+
+
 @import "slider"
 @import "about"
 @import "composition"
@@ -115,6 +160,7 @@ select::-ms-expand
 @import "effects"
 @import "expert"
 @import "compare"
+@import "faq"
 
 
 @import "animation"

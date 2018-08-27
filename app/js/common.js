@@ -169,8 +169,8 @@ var slider = function(slider, pager, speed) {
     var changeSlidePart = function(index, duration) {
         $('.b-slider__slide').eq(index).find('.b-slider__part--1').fadeOut(duration)
         $('.b-slider__slide').eq(index).find('.b-slider__part--2').fadeIn(duration)
-        setTimeout(function(){
-        	$('.b-pager__item').eq(index).find('.b-pager__handler').addClass('showed')
+        setTimeout(function() {
+            $('.b-pager__item').eq(index).find('.b-pager__handler').addClass('showed')
         }, 3000)
     }
 
@@ -189,6 +189,38 @@ var scrollDetection = function() {
 
 }
 
+var tabs = function() {
+    var itemEl = '.b-faq__item',
+        tabEl = '.b-faq__tab',
+        tailEl = '.b-faq__tail',
+        openedClass = 'opened';
+
+    $(tabEl).on('click', function(event) {
+        event.preventDefault();
+        $(this).closest(itemEl).toggleClass(openedClass).find(tailEl).slideToggle(500)
+    });
+
+    $(itemEl).eq(0).addClass(openedClass).find(tailEl).slideToggle(500)
+
+}
+
+var isFocus = function() {
+    var fieldEl = '.b-form__field',
+        groupEl = '.b-form__group',
+        labelEl = '.b-form__label',
+        onfocusClass = 'onfocus';
+
+    $(fieldEl).on('focus', function() {
+        $(this).closest(groupEl).addClass(onfocusClass).find(labelEl).fadeOut(200);
+    });
+
+    $(fieldEl).on('blur', function() {
+        var value = $(this).val();
+        $(this).closest(groupEl).removeClass(onfocusClass);
+        if (value.length == 0) $(this).closest(groupEl).find(labelEl).fadeIn(200);
+    });
+}
+
 $(function() {
 
     slider('.b-slider__inner', '.b-pager', 300);
@@ -203,7 +235,7 @@ $(function() {
         scrollDetection();
     });
 
-     _bxInnit('.b-composition__list', {
+    _bxInnit('.b-composition__list', {
         view: 'mobile',
         adaptiveHeight: true,
         swipeThreshold: 40,
@@ -215,5 +247,9 @@ $(function() {
         infiniteLoop: true,
         slideMargin: 7
     });
+
+    tabs()
+
+    isFocus()
 
 })

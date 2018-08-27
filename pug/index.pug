@@ -242,7 +242,51 @@ html
 										.b-table__cell Результат спустя несколько дней
 										.b-table__cell Эффект после целого курса
 										.b-table__cell.b-table__cell--goodCheck.js-scroll-detection Ощутимый эффект в первые часы после приёма
-										
+			.b-faq
+				.container
+					.b-faq__inner
+						h2.b-faq__title #[b Часто задаваемые] вопросы
+						.b-faq__list
+							.b-faq__item
+								button.b-faq__tab Кому рекомендован Hordeum Forte?
+								.b-faq__tail
+									p.b-faq__text Средство рекомендовано для профилактики и для лечения воспаления предстательной железы мужчинам. Также Hordeum Forte облегчает последствия при хроническом простатите и восстанавливает мужское здоровье. Так как препарат полностью натуральный ограничений в возрасте нет.
+							.b-faq__item
+								button.b-faq__tab Как принимать Hordeum Forte?
+								.b-faq__tail
+									p.b-faq__text Принимайте по одной капсуле 3 раза в день в течение курса.
+							.b-faq__item
+								button.b-faq__tab Как действует Hordeum Forte?
+								.b-faq__tail
+									p.b-faq__text Высокая эффективность фитокомплекса Hordeum Forte обусловлена специальной формулой без антибиотиков, которые пагубно влияют на организм.
+									p.b-faq__text Растительные компоненты, входящие в состав капсул, обладают антимикробным действием. И снимают воспалительный процесс, что ведет к восстановлению ее полноценного функционирования.
+							.b-faq__item
+								button.b-faq__tab Каким образом Hordeum Forte влияет на потенцию?
+								.b-faq__tail
+									p.b-faq__text Активные компоненты средства восстанавливают выработку мужского гормона - тестостерона и активизируют кровообращение в зоне половых органов. Hordeum Forte усиливает приток крови к пенису, что  обеспечивает стойкую и длительную эрекцию.
+									p.b-faq__text  Когда эякулировать, теперь решаете только вы!
+
+			.b-anyQuestions
+				.b-anyQuestions__wrapper
+					.b-anyQuestions__inner
+						.b-anyQuestions__lady
+						img.b-anyQuestions__product(src="img/product-2.png", alt="")
+						h3.b-anyQuestions__title Не нашли свой вопрос?
+						p.b-anyQuestions__lead Наши специалисты проконсультируют вас в любое удобное время. Введите свои контактные данные и мы вам перезвоним.
+						.b-anyQuestions__form
+							form.b-form#order_form(action="", method="post")
+								.b-form__inner
+									.b-form__group.b-form__group--select
+										select.b-form__field#country_code_selector
+											option(value="ES") Испания
+									.b-form__group
+										label.b-form__label(for="form-name") Имя
+										input(type="text", name="name", id="form-name").b-form__field
+									.b-form__group
+										label.b-form__label(for="form-phone") Телефон
+										input(type="tel", name="phone", id="form-phone").only_number.b-form__field
+									button.b-form__btn.c-btn Перезвоните мне
+
 		script(src="js/rellax.min.js")
 		script(src="js/bxslider.js")
 		script(src="js/common.js")
