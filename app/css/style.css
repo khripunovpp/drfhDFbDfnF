@@ -1001,8 +1001,8 @@ select::-ms-expand {
   -webkit-transform: rotate(1deg);
   -ms-transform: rotate(1deg);
   transform: rotate(1deg);
-  -webkit-animation-delay: .5s;
-  animation-delay: .5s;
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s;
 }
 
 .b-expert__photo--2 {
@@ -1012,8 +1012,8 @@ select::-ms-expand {
   -webkit-transform: rotate(-3deg);
   -ms-transform: rotate(-3deg);
   transform: rotate(-3deg);
-  -webkit-animation-delay: .7s;
-  animation-delay: .7s;
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
 }
 
 .b-expert__photo--3 {
@@ -1022,8 +1022,8 @@ select::-ms-expand {
   -webkit-transform: rotate(9deg);
   -ms-transform: rotate(9deg);
   transform: rotate(9deg);
-  -webkit-animation-delay: .9s;
-  animation-delay: .9s;
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s;
   z-index: 2;
 }
 
@@ -1741,8 +1741,8 @@ select::-ms-expand {
 }
 
 .b-expert__buisnessCard.js-isonscreen {
-  -webkit-animation: buisnessCard 0.5s cubic-bezier(0.55, 1.03, 0.82, 0.99) 0.5s both;
-  animation: buisnessCard 0.5s cubic-bezier(0.55, 1.03, 0.82, 0.99) 0.5s both;
+  -webkit-animation: buisnessCard 0.5s cubic-bezier(0.55, 1.03, 0.82, 0.99) 0.3s both;
+  animation: buisnessCard 0.5s cubic-bezier(0.55, 1.03, 0.82, 0.99) 0.3s both;
 }
 
 .b-expert__buisnessCard.js-scroll-detection {
