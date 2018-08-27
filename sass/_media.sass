@@ -121,9 +121,11 @@
 			background-size: contain
 
 	.b-composition
+		overflow: hidden
 		&__top
 			padding: 30px
 		&__capsule
+			max-width: none
 			margin-left: -160px
 		&__barley
 			margin: 170px 0 -70px
@@ -198,7 +200,7 @@
 		&__wrap
 			display: block
 		&__product
-			top: 10px
+			top: -15px
 		&__item
 			display: block
 			position: relative
@@ -267,6 +269,10 @@
 			height: 170px
 			margin-bottom: -18px
 		&__photo
+			&.js-isonscreen
+				animation-name: none
+			&.js-scroll-detection
+				opacity: 1
 			&--1
 				z-index: 1
 				left: 10px
@@ -299,6 +305,11 @@
 			right: auto
 			left: 105px
 			bottom: -120px
+			&.js-isonscreen
+				animation: none 
+			&.js-scroll-detection
+				opacity: 1
+				transform: scale(1) rotate(-5deg)
 
 
 	.b-photo
@@ -348,6 +359,14 @@
 					&::before
 						top: 10px
 						left: 15px
+					&--goodCheck
+						&.js-isonscreen
+							&::before
+								animation: none
+						&.js-scroll-detection
+							&::before
+								opacity: 1
+								transform: scale(1)
 		&__cell
 			padding: 9px 15px
 
@@ -366,6 +385,7 @@
 			padding-left: 45px
 
 	.b-anyQuestions
+		margin-bottom: 0
 		&__wrapper
 			width: 100%
 			max-width: none
@@ -403,6 +423,51 @@
 		&__btn
 			margin-top: 20px
 
+	.b-feedbacks
+		padding: 30px 0
+		&__title
+			margin-bottom: 30px
+		&__list
+			margin-top: 0
+		&__item
+			display: block
+			width: auto
+			&+&
+				margin-left: 0
+
+	.b-order
+		padding: 30px 0
+		&__inner
+			padding-left: 0
+			text-align: center
+		&__peoples
+			display: none
+		&__title
+			font-size: 20px
+			text-align: center
+			margin: 0 0 20px
+			b
+				font-size: 28px
+		&__product
+			position: relative
+			bottom: auto
+			left: auto
+		&__discount
+			display: block
+			transform: none !important
+			position: relative
+			left: auto
+			bottom: auto
+			width: 140px
+			height: 82px
+			background-size: contain
+			font-size: 30px
+			padding: 15px 25px 0 25px
+			margin: 0 auto 10px
+		&__form
+			margin-top: 30px
+			width: 100%
+	
 @media only screen and (max-width : 680px)
 	.b-slider
 		&__right

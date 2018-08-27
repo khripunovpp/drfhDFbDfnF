@@ -265,7 +265,6 @@ html
 								.b-faq__tail
 									p.b-faq__text Активные компоненты средства восстанавливают выработку мужского гормона - тестостерона и активизируют кровообращение в зоне половых органов. Hordeum Forte усиливает приток крови к пенису, что  обеспечивает стойкую и длительную эрекцию.
 									p.b-faq__text  Когда эякулировать, теперь решаете только вы!
-
 			.b-anyQuestions
 				.b-anyQuestions__wrapper
 					.b-anyQuestions__inner
@@ -285,7 +284,63 @@ html
 									.b-form__group
 										label.b-form__label(for="form-phone") Телефон
 										input(type="tel", name="phone", id="form-phone").only_number.b-form__field
-									button.b-form__btn.c-btn Перезвоните мне
+									button.b-form__btn.c-btn.js_submit Перезвоните мне
+			.b-feedbacks
+				.container
+					.b-feedbacks__inner
+						h2.b-feedbacks__title #[b Они уже победили] простатит
+						.b-feedbacks__list
+							.b-feedbacks__item
+								.b-review
+									.b-review__header
+										.b-review__ava
+											img.b-review__pic(src="img/review-ava-1.jpg", alt="")
+										.b-review__info
+											p.b-review__name Игорь, 48 лет
+											p.b-review__date #[script dtime_nums(-14, true)]
+									.b-review__body
+										p.b-review__text Резко появилась боль в промежности и пояснице. Потом в сперме увидел сгустки крови, побежал к урологу - оказалось ПРОСТАТИТ. Я думал, на этом моя жизнь закончилась, пил полгода беспросветно. Спасибо другу, что вовремя меня остановил и нашел эти капсулы. Я как заново родился. Чувствую себя отлично.
+							.b-feedbacks__item
+								.b-review
+									.b-review__header
+										.b-review__ava
+											img.b-review__pic(src="img/review-ava-2.jpg", alt="")
+										.b-review__info
+											p.b-review__name Андрей, 37 лет
+											p.b-review__date #[script dtime_nums(-8, true)]
+									.b-review__body
+										p.b-review__text Мужики, не запускайте проблему! Иначе пройдете семь кругов ада, как я. Каждый год курс массажа и антибиотиков  на протяжении 5 лет - только так получалось обострение снимать. Но слава Богу после курса  Hordeum Forte все, как рукой сняло. Наконец то изобрели реально действенный препарат!
+							.b-feedbacks__item
+								.b-review
+									.b-review__header
+										.b-review__ava
+											img.b-review__pic(src="img/review-ava-3.jpg", alt="")
+										.b-review__info
+											p.b-review__name Алексей, 52 года
+											p.b-review__date 5 дней назад
+									.b-review__body
+										p.b-review__text Резко появилась боль в промежности и пояснице. Потом в сперме увидел сгустки крови, побежал к урологу - оказалось ПРОСТАТИТ. Я думал, на этом моя жизнь закончилась, пил полгода беспросветно. Спасибо другу, что вовремя меня остановил и нашел эти капсулы. Я как заново родился. Чувствую себя отлично.
+			.b-order
+				.container
+					.b-order__inner
+						.b-order__peoples
+						h2.b-order__title #[b Hordeum Forte] шанс изменить жизнь к лучшему
+						span.b-order__discount.js-parralax(data-rellax-speed=".5") -50%
+						img.b-order__product(src="img/product-4.png", alt="")
+						.b-order__form
+							form.b-form#order_form(action="", method="post")
+								.b-form__inner
+									.b-form__group.b-form__group--select
+										select.b-form__field#country_code_selector
+											option(value="ES") Испания
+									.b-form__group
+										label.b-form__label(for="form-name") Имя
+										input(type="text", name="name", id="form-name").b-form__field
+									.b-form__group
+										label.b-form__label(for="form-phone") Телефон
+										input(type="tel", name="phone", id="form-phone").only_number.b-form__field
+									button.b-form__btn.c-btn.js_submit Перезвоните мне
+
 
 		script(src="js/rellax.min.js")
 		script(src="js/bxslider.js")

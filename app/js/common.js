@@ -135,6 +135,24 @@ var _bxInnit = function(elem, opt) {
     return slider;
 }
 
+var toForm = function() {
+    $('.pre_toform').click(function(e) {
+        e.preventDefault();
+        var a = $('.js_submit');
+        var b = a.closest('form');
+
+        if ($('form#toform').length) {
+            a = $('#toform .js_submit');
+            b = a.closest('form#toform');
+        }
+
+        if (b.length && a.is(':visible')) {
+            $("html,body").animate({ scrollTop: b.last().offset().top }, 1000);
+        }
+        return false;
+    });
+}
+
 var slider = function(slider, pager, speed) {
 
     var _slider = _bxInnit(slider, {
@@ -247,6 +265,21 @@ $(function() {
         infiniteLoop: true,
         slideMargin: 7
     });
+
+    _bxInnit('.b-feedbacks__list', {
+        view: 'mobile',
+        adaptiveHeight: true,
+        swipeThreshold: 40,
+        controls: false,
+        pager: true,
+        auto: true,
+        pause: 10000,
+        autoHover: true,
+        infiniteLoop: true,
+        slideMargin: 7
+    });
+
+    toForm()
 
     tabs()
 
