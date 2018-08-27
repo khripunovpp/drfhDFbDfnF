@@ -783,7 +783,7 @@ select::-ms-expand {
 }
 
 .b-effects {
-  padding: 50px 0;
+  padding: 50px 0 80px;
 }
 
 .b-effects__title {
@@ -870,7 +870,7 @@ select::-ms-expand {
 }
 
 .b-effects {
-  padding: 50px 0;
+  padding: 50px 0 80px;
 }
 
 .b-effects__title {
@@ -1011,8 +1011,8 @@ select::-ms-expand {
   position: absolute;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
 }
 
 .b-expert__photo--1 {
@@ -1021,8 +1021,8 @@ select::-ms-expand {
   -webkit-transform: rotate(1deg);
   -ms-transform: rotate(1deg);
   transform: rotate(1deg);
-  -webkit-animation-delay: .2s;
-  animation-delay: .2s;
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
 }
 
 .b-expert__photo--2 {
@@ -1032,8 +1032,8 @@ select::-ms-expand {
   -webkit-transform: rotate(-3deg);
   -ms-transform: rotate(-3deg);
   transform: rotate(-3deg);
-  -webkit-animation-delay: .4s;
-  animation-delay: .4s;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
 
 .b-expert__photo--3 {
@@ -1042,8 +1042,8 @@ select::-ms-expand {
   -webkit-transform: rotate(9deg);
   -ms-transform: rotate(9deg);
   transform: rotate(9deg);
-  -webkit-animation-delay: .6s;
-  animation-delay: .6s;
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;
   z-index: 2;
 }
 
@@ -1765,8 +1765,8 @@ select::-ms-expand {
 }
 
 .b-expert__buisnessCard.js-isonscreen {
-  -webkit-animation: buisnessCard 0.5s cubic-bezier(0.55, 1.03, 0.82, 0.99) 0.3s both;
-  animation: buisnessCard 0.5s cubic-bezier(0.55, 1.03, 0.82, 0.99) 0.3s both;
+  -webkit-animation: buisnessCard 0.8s cubic-bezier(0.55, 1.03, 0.82, 0.99) 1.6s both;
+  animation: buisnessCard 0.8s cubic-bezier(0.55, 1.03, 0.82, 0.99) 1.6s both;
 }
 
 .b-expert__buisnessCard.js-scroll-detection {
@@ -1777,8 +1777,8 @@ select::-ms-expand {
 }
 
 .b-table__cell--goodCheck.js-isonscreen::before {
-  -webkit-animation: toSmall .5s both;
-  animation: toSmall .5s both;
+  -webkit-animation: toSmall .5s both .7s;
+  animation: toSmall .5s both .7s;
 }
 
 .b-table__cell--goodCheck.js-scroll-detection::before {
@@ -2021,7 +2021,7 @@ select::-ms-expand {
     padding-right: 0;
   }
   .b-effects__item:last-child .b-effects__img {
-    margin-left: 0;
+    margin-left: auto;
   }
   .b-effects__item:last-child .b-effects__text {
     padding-left: 0;
@@ -2035,10 +2035,15 @@ select::-ms-expand {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
     height: 1px;
     width: 140px;
+    margin-left: -70px;
     background-color: #e5e5e5;
+  }
+  .b-effects__img {
+    display: block;
+    margin: 0 auto;
   }
   .b-effects__text {
     padding: 0;
