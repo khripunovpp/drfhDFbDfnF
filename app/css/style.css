@@ -1716,6 +1716,10 @@ select::-ms-expand {
 }
 
 .js-parralax {
+  -webkit-transition: -webkit-transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: -webkit-transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
