@@ -1,1 +1,62 @@
 .b-compare
+	padding: 45px 0
+	&__slogan
+		font-size: 24px
+		font-weight: 700
+		padding: 35px 0 35px 225px
+		position: relative
+		margin: 0 0 20px
+		b
+			color: $color
+		&::before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 35px
+			transform: translateY(-50%)
+			width: 145px
+			height: 134px
+			background-repeat: no-repeat
+			background-position: 50% 50%
+			background-size: cover
+			background-image: url(../img/badge-proven.png)
+
+.b-table
+	display: table
+	width: 100%
+	min-width: 940px
+	table-layout: fixed
+	&__header
+		display: table-header-group
+		.b-table
+			&__cell 
+				font-weight: 700
+				font-size: 16px
+				background-color: #e6e6e6
+	&__body
+		display: table-row-group
+		.b-table
+			&__cell
+				font-weight: 500
+				border-bottom: 1px solid #e6e6e6
+				padding-left: 40px
+				position: relative
+				&::before
+					content: '\e902'
+					@extend %icon
+					font-size: 12px
+					color: #de3131
+					position: absolute
+					top: 15px
+					left: 20px
+				&--goodCheck
+					&::before
+						content: '\e900'
+						color: #209144
+	&__row
+		display: table-row
+		width: 100%
+	&__cell
+		display: table-cell
+		vertical-align: top
+		padding: 12px 20px

@@ -6,6 +6,18 @@
   font-style: normal;
 }
 
+.b-table__body .b-table__cell::before {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1087,6 +1099,92 @@ select::-ms-expand {
   left: auto;
 }
 
+.b-compare {
+  padding: 45px 0;
+}
+
+.b-compare__slogan {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 35px 0 35px 225px;
+  position: relative;
+  margin: 0 0 20px;
+}
+
+.b-compare__slogan b {
+  color: #ff9f19;
+}
+
+.b-compare__slogan::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 145px;
+  height: 134px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-image: url(../img/badge-proven.png);
+}
+
+.b-table {
+  display: table;
+  width: 100%;
+  min-width: 940px;
+  table-layout: fixed;
+}
+
+.b-table__header {
+  display: table-header-group;
+}
+
+.b-table__header .b-table__cell {
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #e6e6e6;
+}
+
+.b-table__body {
+  display: table-row-group;
+}
+
+.b-table__body .b-table__cell {
+  font-weight: 500;
+  border-bottom: 1px solid #e6e6e6;
+  padding-left: 40px;
+  position: relative;
+}
+
+.b-table__body .b-table__cell::before {
+  content: '\e902';
+  font-size: 12px;
+  color: #de3131;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+.b-table__body .b-table__cell--goodCheck::before {
+  content: '\e900';
+  color: #209144;
+}
+
+.b-table__row {
+  display: table-row;
+  width: 100%;
+}
+
+.b-table__cell {
+  display: table-cell;
+  vertical-align: top;
+  padding: 12px 20px;
+}
+
 @-webkit-keyframes pager {
   0 {
     width: 10px;
@@ -1207,6 +1305,32 @@ select::-ms-expand {
   }
 }
 
+@-webkit-keyframes toSmall {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(15);
+    transform: scale(15);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes toSmall {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(15);
+    transform: scale(15);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
 .js-parralax {
   transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -1242,6 +1366,18 @@ select::-ms-expand {
   -webkit-transform: scale(1.5) rotate(-5deg);
   -ms-transform: scale(1.5) rotate(-5deg);
   transform: scale(1.5) rotate(-5deg);
+}
+
+.b-table__cell--goodCheck.js-isonscreen::before {
+  -webkit-animation: toSmall .5s both;
+  animation: toSmall .5s both;
+}
+
+.b-table__cell--goodCheck.js-scroll-detection::before {
+  opacity: 0;
+  -webkit-transform: scale(15);
+  -ms-transform: scale(15);
+  transform: scale(15);
 }
 
 @media only screen and (max-width: 991px) {
@@ -1615,6 +1751,58 @@ select::-ms-expand {
     font-size: 10px;
     line-height: 1.2;
     padding: 6px;
+  }
+  .b-compare {
+    padding: 40px 0 0;
+  }
+  .b-compare__slogan {
+    font-size: 16px;
+    padding: 115px 0 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .b-compare__slogan::before {
+    width: 108px;
+    height: 100px;
+    top: 0;
+    left: 50%;
+    margin-left: -54px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+  .b-compare__table {
+    overflow-x: scroll;
+    padding-bottom: 10px;
+  }
+  .b-compare__table::-webkit-scrollbar {
+    height: 15px;
+  }
+  .b-compare__table::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+  }
+  .b-compare__table::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    width: 50%;
+    border: 2px solid #e0e0e0;
+  }
+  .b-table__header .b-table__cell {
+    font-size: 14px;
+  }
+  .b-table__body .b-table__cell {
+    font-size: 11px;
+    padding-left: 34px;
+  }
+  .b-table__body .b-table__cell::before {
+    top: 10px;
+    left: 15px;
+  }
+  .b-table__cell {
+    padding: 9px 15px;
   }
 }
 

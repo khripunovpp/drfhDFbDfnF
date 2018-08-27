@@ -307,7 +307,48 @@
 			line-height: 1.2
 			padding: 6px
 
-
+	.b-compare
+		padding: 40px 0 0
+		&__slogan
+			font-size: 16px
+			padding: 115px 0 0
+			margin-bottom: 30px
+			text-align: center
+			&::before
+				width: 108px
+				height: 100px
+				top: 0
+				left: 50%
+				margin-left: -54px
+				transform: none
+		&__table
+			overflow-x: scroll
+			padding-bottom: 10px
+			&::-webkit-scrollbar
+				height: 15px
+			&::-webkit-scrollbar-track
+				background-color: #e0e0e0
+				border-radius: 10px
+			&::-webkit-scrollbar-thumb
+				background-color: #fff
+				border-radius: 10px
+				width: 50%
+				border: 2px solid #e0e0e0
+	.b-table
+		&__header
+			.b-table
+				&__cell
+					font-size: 14px
+		&__body
+			.b-table
+				&__cell 
+					font-size: 11px
+					padding-left: 34px
+					&::before
+						top: 10px
+						left: 15px
+		&__cell
+			padding: 9px 15px
 
 @media only screen and (max-width : 680px)
 	.b-slider

@@ -38,6 +38,14 @@
 		opacity: 1
 		transform: scale(1) rotate(-5deg)
 
+@keyframes toSmall
+	from
+		opacity: 0
+		transform: scale(15)
+	to
+		opacity: 1
+		transform: scale(1)
+
 .js-parralax
 	transition: transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 1.2s cubic-bezier(0.165, 0.84, 0.44, 1)
 
@@ -71,3 +79,12 @@
 	&.js-scroll-detection
 		opacity: 0
 		transform: scale(1.5) rotate(-5deg)
+
+.b-table__cell--goodCheck
+	&.js-isonscreen
+		&::before
+			animation: toSmall .5s both
+	&.js-scroll-detection
+		&::before
+			opacity: 0
+			transform: scale(15)
