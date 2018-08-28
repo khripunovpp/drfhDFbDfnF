@@ -2410,6 +2410,7 @@ select::-ms-expand {
     left: auto;
     text-align: center;
     margin-top: 15px;
+    max-width: none;
   }
   .b-order__form {
     margin-top: 10px;
