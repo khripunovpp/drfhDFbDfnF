@@ -321,6 +321,9 @@ html
 						h2.b-order__title #[b Hordeum&nbsp;Forte] tu oportunidad de cambiar la vida para mejor 100% victoria sobre la prostatitis
 						span.b-order__discount.js-parralax(data-rellax-speed=".5") -50%
 						img.b-order__product(src="img/product-4.png", alt="")
+						.b-order__cost
+							p.b-order__oldprice {{ old_price }} {{ currency }}
+							p.b-order__newprice {{ price }} {{ currency }}
 						.b-order__form
 							form.b-form#order_form(action="", method="post")
 								.b-form__inner
