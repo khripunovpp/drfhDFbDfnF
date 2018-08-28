@@ -135,6 +135,7 @@ select::-ms-expand
 
 .b-form
 	&__group
+		background-color: #fff
 		border: 1px solid #e6e6e6
 		position: relative
 		&:first-of-type
@@ -170,10 +171,30 @@ select::-ms-expand
 		font-weight: 500
 		color: #bebfc3
 		cursor: pointer
+	&__privacy
+		margin: 15px 0
+		font-size: 12px
+		font-weight: 500
+		color: #bebfc3
+		text-align: left
+		position: relative
+		padding: 0 15px
+		padding-left: 52px
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			left: 15px
+			transform: translateY(-50%)
+			width: 27px
+			height: 31px
+			background-image: url(../img/form-icon-privacy.png)
+			background-repeat: no-repeat
+			background-position: 50% 50%
+			background-size: cover
 	&__btn
-		margin-top: 40px
-
-
+		display: table
+		margin: 15px auto 0
 
 @import "slider"
 @import "about"
@@ -185,7 +206,6 @@ select::-ms-expand
 @import "faq"
 @import "feedbacks"
 @import "order"
-
 
 @import "animation"
 //ALWAYS END

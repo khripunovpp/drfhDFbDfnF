@@ -175,6 +175,7 @@ select::-ms-expand {
 }
 
 .b-form__group {
+  background-color: #fff;
   border: 1px solid #e6e6e6;
   position: relative;
 }
@@ -226,8 +227,37 @@ select::-ms-expand {
   cursor: pointer;
 }
 
+.b-form__privacy {
+  margin: 15px 0;
+  font-size: 12px;
+  font-weight: 500;
+  color: #bebfc3;
+  text-align: left;
+  position: relative;
+  padding: 0 15px;
+  padding-left: 52px;
+}
+
+.b-form__privacy::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 27px;
+  height: 31px;
+  background-image: url(../img/form-icon-privacy.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
 .b-form__btn {
-  margin-top: 40px;
+  display: table;
+  margin: 15px auto 0;
 }
 
 .b-slider {
@@ -1405,7 +1435,7 @@ select::-ms-expand {
 .b-anyQuestions__lead {
   font-weight: 500;
   font-size: 16px;
-  max-width: 400px;
+  max-width: 320px;
   margin: 0;
 }
 
@@ -1420,14 +1450,14 @@ select::-ms-expand {
   left: 430px;
 }
 
-.b-anyQuestions__lady {
+.b-anyQuestions__operator {
   position: absolute;
   z-index: 1;
   bottom: 0;
-  right: -45px;
-  width: 371px;
-  height: 407px;
-  background-image: url(../img/faq-lady.png);
+  right: -115px;
+  width: 391px;
+  height: 404px;
+  background-image: url(../img/faq-operator.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   -webkit-background-size: cover;
@@ -1583,8 +1613,10 @@ select::-ms-expand {
 .b-order__cost {
   position: absolute;
   top: 200px;
-  left: 385px;
-  text-align: left;
+  left: 380px;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
 }
 
 .b-order__oldprice {
@@ -2297,13 +2329,13 @@ select::-ms-expand {
     text-align: center;
     font-size: 14px;
   }
-  .b-anyQuestions__lady {
-    width: 278px;
+  .b-anyQuestions__operator {
+    width: 290px;
     height: 300px;
     right: 50%;
-    -webkit-transform: translateX(50%);
-    -ms-transform: translateX(50%);
-    transform: translateX(50%);
+    -webkit-transform: translateX(50%) scale(-1, 1);
+    -ms-transform: translateX(50%) scale(-1, 1);
+    transform: translateX(50%) scale(-1, 1);
     margin-right: 280px;
   }
   .b-anyQuestions__product {
@@ -2389,7 +2421,7 @@ select::-ms-expand {
   .b-slider__right {
     display: none;
   }
-  .b-anyQuestions__lady, .b-anyQuestions__product {
+  .b-anyQuestions__operator, .b-anyQuestions__product {
     display: none;
   }
 }
