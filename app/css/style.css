@@ -116,10 +116,7 @@ select::-ms-expand {
 }
 
 .c-btn:hover {
-  background-color: #ff9400;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  background-color: #1c2238;
 }
 
 .b-composition .bx-controls {
