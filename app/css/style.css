@@ -1572,7 +1572,7 @@ select::-ms-expand {
 
 .b-order__product {
   position: absolute;
-  bottom: -30px;
+  bottom: 0;
   left: 380px;
 }
 
