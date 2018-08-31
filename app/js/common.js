@@ -226,14 +226,20 @@ var isFocus = function() {
     var fieldEl = '.b-form__field',
         groupEl = '.b-form__group',
         labelEl = '.b-form__label',
-        onfocusClass = 'onfocus';
+        onfocusClass = 'onfocus',
+        value;
+
+    $(fieldEl).each(function() {
+        value = $(this).val();
+        if (value.length > 0) $(this).closest(groupEl).addClass(onfocusClass).find(labelEl).fadeOut(200);
+    })
 
     $(fieldEl).on('focus', function() {
         $(this).closest(groupEl).addClass(onfocusClass).find(labelEl).fadeOut(200);
     });
 
     $(fieldEl).on('blur', function() {
-        var value = $(this).val();
+        value = $(this).val();
         $(this).closest(groupEl).removeClass(onfocusClass);
         if (value.length == 0) $(this).closest(groupEl).find(labelEl).fadeIn(200);
     });
