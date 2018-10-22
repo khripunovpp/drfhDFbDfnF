@@ -242,12 +242,13 @@ var isFocus = function() {
         value = $(this).val();
         $(this).closest(groupEl).removeClass(onfocusClass);
         if (value.length == 0) $(this).closest(groupEl).find(labelEl).fadeIn(200);
+        if (value.length > 0) $(this).closest(groupEl).addClass(onfocusClass);
     });
 }
 
 $(function() {
 
-    slider('.b-slider__inner', '.b-pager', 300);
+    slider('.b-slider__slider', '.b-pager', 300);
 
     var parallax = new Rellax('.js-parralax', {
         center: true
